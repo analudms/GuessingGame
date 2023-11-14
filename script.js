@@ -10,7 +10,7 @@ const verificar = () => {
 
   switch(true) {
     case currentAttempts == attempts:
-      res.innerHTML = `Suas tentativas acabaram. O número secreto era ${numeroSecreto}`;
+      res.innerHTML = `Suas tentativas acabaram. O número secreto era ${secretNumber}`;
       num.value = "";
       btn.textContent = "RESTART GAME";
       btn.removeEventListener("click", verificar);
@@ -18,7 +18,7 @@ const verificar = () => {
       break;
 
     case inputValue == secretNumber:
-      res.innerHTML = `Parabéns, você acertou! O número secreto era ${numeroSecreto}`;
+      res.innerHTML = `Parabéns, você acertou! O número secreto era ${secretNumber}`;
       num.value = "";
       btn.textContent = "RESTART GAME";
       btn.removeEventListener("click", verificar);
